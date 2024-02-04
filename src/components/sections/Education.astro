@@ -1,7 +1,48 @@
 ---
 import Section from "@/components/Section.astro";
+import { education } from "@cv";
 ---
 
 <Section title="Educación">
+  <ul class="flex flex-col gap-4 mt-4">
+    {
+      education.map(
+        ({ institution, startDate, endDate, url, area, highlights }) => {
+          const startYear = new Date(startDate).getUTCFullYear();
+          const endYear = endDate ? new Date(endDate).getUTCFullYear() : "Actual";
 
+          return (
+            <li>
+              <article class="flex flex-col gap-1">
+                <header class="flex justify-between items-start">
+                  <div class="flex items-center gap-2">
+                    <h3>
+                      {url ? (
+                        <a href={url} target="_blank" class="hover:underline">
+                          {institution}
+                        </a>
+                      ) : (
+                        institution
+                      )}
+                    </h3>
+                    <div class="flex items-center gap-1">
+                      {highlights.map((highlight) => (
+                        <span class="px-2 py-1 bg-gray-100 text-xs text-gray-950 font-semibold rounded-md hover:bg-gray-50 transition-all">
+                          {highlight}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                  <time class="whitespace-nowrap">
+                    {startYear} - {endYear}
+                  </time>
+                </header>
+                <p>{area}</p>
+              </article>
+            </li>
+          );
+        }
+      )
+    }
+  </ul>
 </Section>

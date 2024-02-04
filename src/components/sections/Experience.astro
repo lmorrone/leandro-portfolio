@@ -1,7 +1,49 @@
 ---
 import Section from "@/components/Section.astro";
+import { work } from "@cv";
 ---
 
 <Section title="Experiencia">
+  <ul class="flex flex-col gap-4 mt-4">
+    {
+      work.map(
+        ({ name, startDate, endDate, url, position, summary, highlights }) => {
+          const startYear = new Date(startDate).getUTCFullYear();
+          const endYear = endDate ? new Date(endDate).getUTCFullYear() : "Actual";
 
+          return (
+            <li>
+              <article class="flex flex-col gap-1">
+                <header class="flex justify-between items-start">
+                  <div class="flex justify-start items-start gap-2">
+                    <h3>
+                      {url ? (
+                        <a href={url} target="_blank" class="hover:underline">
+                          {name}
+                        </a>
+                      ) : (
+                        name
+                      )}
+                    </h3>
+                    <div class="flex flex-wrap items-start gap-1">
+                      {highlights.map((highlight) => (
+                        <span class="px-2 py-1 bg-gray-100 text-xs text-gray-950 font-semibold rounded-md hover:bg-gray-50 transition-all">
+                          {highlight}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                  <time class="whitespace-nowrap">
+                    {startYear} - {endYear}
+                  </time>
+                </header>
+                <p class="text-gray-950">{position}</p>
+                <p class="text-xs">{summary}</p>
+              </article>
+            </li>
+          );
+        }
+      )
+    }
+  </ul>
 </Section>

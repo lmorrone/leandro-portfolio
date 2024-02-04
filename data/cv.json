@@ -35,13 +35,49 @@
   "work": [
     {
       "name": "ARTECH",
-      "position": "Líder de desarrollo web",
+      "position": "Desarrollador web → Líder de desarrollo",
       "url": "https://www.artech-consulting.com.ar/",
-      "startDate": "2013-01-01",
-      "endDate": "2014-01-01",
-      "summary": "Description…",
+      "startDate": "2015-01-01",
+      "endDate": null,
+      "summary": "Análisis funcional, diseño arquitectónico, modelado de datos, programación web full-stack y desktop, integración de sistemas, capacitación de personal. Especialidad: Sistemas de gestión empresarial (ventas, operaciones, calidad, reporting). Tecnologías: C#, ASP.Net Core, Razor, SQL Server, PHP, HTML, CSS, Javascript.",
       "highlights": [
-        "Started the company"
+        "Híbrido",
+        "Full-time"
+      ]
+    },
+    {
+      "name": "Universidad Nacional de La Matanza",
+      "position": "Desarrollador web",
+      "url": "https://www.unlam.edu.ar/",
+      "startDate": "2010-06-01",
+      "endDate": null,
+      "summary": "Diseño, desarrollo, mantenimiento y soporte de MIeL, plataforma web educativa para cursar, dictar y gestionar materias a distancia en la UNLaM. Tecnologías: PHP, MySQL, HTML, CSS, Javascript.",
+      "highlights": [
+        "Híbrido",
+        "Part-time"
+      ]
+    },
+    {
+      "name": "Universidad Nacional de La Matanza",
+      "position": "Docente de Computación",
+      "url": "https://www.unlam.edu.ar/",
+      "startDate": "2014-04-01",
+      "endDate": null,
+      "summary": "Tutor en la cátedra Computación Transversal, modalidad semipresencial. Contenido: Windows, internet y paquete de Office (Word, Excel, Power Point). Cargo: Profesor Adjunto concursado.",
+      "highlights": [
+        "Híbrido",
+        "Part-time"
+      ]
+    },
+    {
+      "name": "Freelance",
+      "position": "Desarrollador web",
+      "url": null,
+      "startDate": "2013-01-01",
+      "endDate": "2016-01-01",
+      "summary": "Desarrollo de sitios web independiente para particulares. Tecnologías: HTML, CSS, Javascript, PHP, MySQL.",
+      "highlights": [
+        "Remoto"
       ]
     }
   ],
@@ -60,15 +96,29 @@
   ],
   "education": [
     {
-      "institution": "University",
-      "url": "https://institution.com/",
-      "area": "Software Development",
-      "studyType": "Bachelor",
-      "startDate": "2011-01-01",
-      "endDate": "2013-01-01",
-      "score": "4.0",
-      "courses": [
-        "DB1101 - Basic SQL"
+      "institution": "Universidad Nacional de Tres de Febrero",
+      "url": "https://untref.edu.ar/",
+      "area": "Maestría en Tecnología y Estética de las Artes Electrónicas",
+      "studyType": "Maestría",
+      "startDate": "2015-01-01",
+      "endDate": "2016-12-31",
+      "score": "8.7",
+      "courses": [],
+      "highlights": [
+        "Incompleto"
+      ]
+    },
+    {
+      "institution": "Universidad Nacional de La Matanza",
+      "url": "https://www.unlam.edu.ar/",
+      "area": "Ingeniería en Informática",
+      "studyType": "Ingeniería",
+      "startDate": "2008-01-01",
+      "endDate": "2013-12-31",
+      "score": "8.7",
+      "courses": [],
+      "highlights": [
+        "Completo"
       ]
     }
   ],
@@ -99,13 +149,74 @@
   ],
   "skills": [
     {
-      "name": "Web Development",
-      "level": "Master",
-      "keywords": [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ]
+      "name": "C#/.Net Core",
+      "level": 1,
+      "keywords": []
+    },
+    {
+      "name": "ASP.Net MVC/API",
+      "level": 1,
+      "keywords": []
+    },
+    {
+      "name": "PHP",
+      "level": 1,
+      "keywords": []
+    },
+    {
+      "name": "SQL Server",
+      "level": 1,
+      "keywords": []
+    },
+    {
+      "name": "MySQL",
+      "level": 1,
+      "keywords": []
+    },
+    {
+      "name": "MS Office",
+      "level": 1,
+      "keywords": []
+    },
+    {
+      "name": "HTML/CSS",
+      "level": 1,
+      "keywords": []
+    },
+    {
+      "name": "Javascript",
+      "level": 1,
+      "keywords": []
+    },
+    {
+      "name": "jQuery",
+      "level": 1,
+      "keywords": []
+    },
+    {
+      "name": "Bootstrap",
+      "level": 1,
+      "keywords": []
+    },
+    {
+      "name": "Tailwind",
+      "level": 2,
+      "keywords": []
+    },
+    {
+      "name": "React.js",
+      "level": 2,
+      "keywords": []
+    },
+    {
+      "name": "C++",
+      "level": 2,
+      "keywords": []
+    },
+    {
+      "name": "Photoshop",
+      "level": 2,
+      "keywords": []
     }
   ],
   "languages": [

@@ -1,7 +1,27 @@
 ---
 import Section from "@/components/Section.astro";
+import { skills } from "@cv";
 ---
 
 <Section title="Habilidades">
+  <ul class="flex flex-wrap items-center gap-1">
+    {
+      skills.map(({ name, level }) => {
+        const classLevel =
+          level == 1
+            ? "bg-gray-700 hover:bg-gray-600"
+            : level == 2
+              ? "bg-gray-600 hover:bg-gray-500"
+              : "bg-gray-500 hover:bg-gray-400";
 
+        return (
+          <li
+            class={`px-3 py-1 ${classLevel} rounded-md text-white text-xs font-semibold transition-all`}
+          >
+            {name}
+          </li>
+        );
+      })
+    }
+  </ul>
 </Section>
