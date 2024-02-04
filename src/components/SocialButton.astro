@@ -1,0 +1,11 @@
+---
+const { href, title } = Astro.params;
+---
+<a
+  href={href}
+  target="_blank"
+  class="justify-center items-center inline-flex size-8 border border-gray-200 rounded-md hover:bg-gray-100 hover:text-gray-950 transition-all cursor-pointer"
+  title={title}
+>
+  <slot />
+</a>

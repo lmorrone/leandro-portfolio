@@ -1,0 +1,148 @@
+{
+  "basics": {
+    "name": "Leandro Morrone",
+    "label": "Ingeniero en informática especializado en desarrollado web y docente universitario",
+    "image": "https://media.licdn.com/dms/image/D4D03AQEjZC-Z5C2j5Q/profile-displayphoto-shrink_200_200/0/1702317412683?e=1712793600&v=beta&t=niJGhX3IM0jOI5WGxFJAS4qtGKdNWDJTskPiMfdhEcY",
+    "email": "liomorrone@gmail.com",
+    "phone": "(+94) 11 6116-0881",
+    "url": "https://leandromorrone.com.ar",
+    "summary": "Con más de 10 años de experiencia en desarrollo web, he participado en proyectos de diferentes escalas y disciplinas, como programador, analista, arquitecto de datos o líder. Mi trabajo es principalmente con C#, ASP.Net, PHP, Javascript y SQL. Además de ser un apasionado de la programación, me gusta enseñar y transmitir mis conocimientos a estudiantes y entusiastas.",
+    "location": {
+      "address": "Alsina 259",
+      "postalCode": "B1704",
+      "city": "Ramos Mejía",
+      "countryCode": "AR",
+      "region": "Buenos Aires"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "lmorrone",
+        "url": "https://github.com/lmorrone/"
+      },
+      {
+        "network": "Linkedin",
+        "username": "leandro-morrone",
+        "url": "https://www.linkedin.com/in/leandro-morrone/"
+      },
+      {
+        "network": "X",
+        "username": "leandro_morrone",
+        "url": "https://twitter.com/leandro_morrone/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "ARTECH",
+      "position": "Líder de desarrollo web",
+      "url": "https://www.artech-consulting.com.ar/",
+      "startDate": "2013-01-01",
+      "endDate": "2014-01-01",
+      "summary": "Description…",
+      "highlights": [
+        "Started the company"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Organization",
+      "position": "Volunteer",
+      "url": "https://organization.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Description…",
+      "highlights": [
+        "Awarded 'Volunteer of the Month'"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University",
+      "url": "https://institution.com/",
+      "area": "Software Development",
+      "studyType": "Bachelor",
+      "startDate": "2011-01-01",
+      "endDate": "2013-01-01",
+      "score": "4.0",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    },
+    {
+      "language": "Inglés",
+      "fluency": "Profesional básico"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Project",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Description...",
+      "highlights": [
+        "Won award at AIHacks 2016"
+      ],
+      "url": "https://project.com/"
+    }
+  ]
+}

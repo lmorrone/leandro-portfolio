@@ -1,0 +1,78 @@
+---
+import { basics } from "@cv";
+
+import EmailIcon from "@/icons/EmailIcon.astro";
+import GithubIcon from "@/icons/GithubIcon.astro";
+import LinkedinIcon from "@/icons/LinkedinIcon.astro";
+import PhoneIcon from "@/icons/PhoneIcon.astro";
+import Section from "@/components/Section.astro";
+import WorldIcon from "@/icons/WorldIcon.astro";
+import XIcon from "@/icons/XIcon.astro";
+import SocialButton from "@/components/SocialButton.astro";
+
+const { name, label, image, location, profiles, phone, email } = basics;
+const { city, region } = location;
+
+const SOCIAL_ICONS: Record<string, any> = {
+  GitHub: GithubIcon,
+  Linkedin: LinkedinIcon,
+  X: XIcon,
+};
+---
+
+<Section>
+  <div class="flex flex-row justify-between items-center gap-4">
+    <div>
+      <h1 class="text-2xl font-bold">{name}</h1>
+      <p class="mt-2 mb-2">
+        {label}
+      </p>
+      <p class="flex items-center gap-2 text-xs">
+        <WorldIcon />
+        {city}, {region}
+      </p>
+      <footer class="flex gap-1 mt-3">
+        {
+          email && (
+            <SocialButton
+              href={`mailto:${email}`}
+              title={`Enviar un email a ${name} al correo ${email}`}
+            >
+              <EmailIcon />
+            </SocialButton>
+          )
+        }
+        {
+          phone && (
+            <SocialButton
+              href={`tel:${email}`}
+              title={`Llamar por teléfono a ${name} al número ${email}`}
+            >
+              <PhoneIcon />
+            </SocialButton>
+          )
+        }
+        {
+          profiles.map(({ network, url, username }) => {
+            const Icon = SOCIAL_ICONS[network];
+            return (
+              <SocialButton
+                href={url}
+                title={`Visitar el perfil de ${name} en ${network}`}
+              >
+                <Icon />
+              </SocialButton>
+            );
+          })
+        }
+      </footer>
+    </div>
+    <figure>
+      <img
+        src={image}
+        alt={name}
+        class="aspect-square object-cover w-32 rounded-xl"
+      />
+    </figure>
+  </div>
+</Section>
