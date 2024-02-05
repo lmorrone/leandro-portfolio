@@ -102,7 +102,8 @@
       "studyType": "Maestría",
       "startDate": "2015-01-01",
       "endDate": "2016-12-31",
-      "score": "8.7",
+      "score": null,
+      "award": null,
       "courses": [],
       "highlights": [
         "Incompleto"
@@ -116,6 +117,7 @@
       "startDate": "2008-01-01",
       "endDate": "2013-12-31",
       "score": "8.7",
+      "award": "Premio \"A los mejores egresados de carreras de ingeniería de universidades argentinas\" por el mejor promedio de ingeniería en la UNLaM en 2014. Otorgó la Academia Nacional de Ingeniería.",
       "courses": [],
       "highlights": [
         "Completo"
@@ -124,10 +126,16 @@
   ],
   "awards": [
     {
-      "title": "Award",
+      "title": "A los mejores egresados de carreras de ingeniería de universidades argentinas",
       "date": "2014-11-01",
-      "awarder": "Company",
-      "summary": "There is no spoon."
+      "awarder": "Academia Nacional de Ingeniería",
+      "summary": "Mejor promedio en carreras de ingeniería de la UNLaM en 2014."
+    },
+    {
+      "title": "Esperanzas de la Patria",
+      "date": "2007-10-01",
+      "awarder": "Rotary Club La Matanza",
+      "summary": "Mejor promedio de la escuela secundaria."
     }
   ],
   "certificates": [
@@ -150,72 +158,92 @@
   "skills": [
     {
       "name": "C#/.Net Core",
-      "level": 1,
+      "level": "1",
       "keywords": []
     },
     {
       "name": "ASP.Net MVC/API",
-      "level": 1,
-      "keywords": []
-    },
-    {
-      "name": "PHP",
-      "level": 1,
+      "level": "1",
       "keywords": []
     },
     {
       "name": "SQL Server",
-      "level": 1,
+      "level": "1",
+      "keywords": []
+    },
+    {
+      "name": "PHP",
+      "level": "1",
       "keywords": []
     },
     {
       "name": "MySQL",
-      "level": 1,
+      "level": "1",
+      "keywords": []
+    },
+    {
+      "name": "Git",
+      "level": "1",
       "keywords": []
     },
     {
       "name": "MS Office",
-      "level": 1,
+      "level": "1",
       "keywords": []
     },
     {
       "name": "HTML/CSS",
-      "level": 1,
+      "level": "1",
       "keywords": []
     },
     {
       "name": "Javascript",
-      "level": 1,
+      "level": "1",
       "keywords": []
     },
     {
       "name": "jQuery",
-      "level": 1,
+      "level": "1",
       "keywords": []
     },
     {
       "name": "Bootstrap",
-      "level": 1,
+      "level": "1",
       "keywords": []
     },
     {
       "name": "Tailwind",
-      "level": 2,
+      "level": "2",
       "keywords": []
     },
     {
       "name": "React.js",
-      "level": 2,
+      "level": "2",
       "keywords": []
     },
     {
       "name": "C++",
-      "level": 2,
+      "level": "2",
       "keywords": []
     },
     {
       "name": "Photoshop",
-      "level": 2,
+      "level": "2",
+      "keywords": []
+    },
+    {
+      "name": "Docker",
+      "level": "3",
+      "keywords": []
+    },
+    {
+      "name": "Azure",
+      "level": "3",
+      "keywords": []
+    },
+    {
+      "name": "Arduino",
+      "level": "3",
       "keywords": []
     }
   ],
@@ -246,14 +274,64 @@
   ],
   "projects": [
     {
-      "name": "Project",
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "description": "Description...",
+      "name": "MIeL",
+      "startDate": "2010-05-01",
+      "endDate": null,
+      "description": "Materias Interactivas en Línea, plataforma virtual de enseñanza y aprendizaje de la UNLaM. +50.000 usuarios.",
       "highlights": [
-        "Won award at AIHacks 2016"
+        "Full Stack developer",
+        "PHP",
+        "MySQL",
+        "HTML",
+        "CSS",
+        "jQuery"
       ],
-      "url": "https://project.com/"
+      "url": "https://miel.unlam.edu.ar/"
+    },
+    {
+      "name": "MIeL",
+      "startDate": "2010-05-01",
+      "endDate": null,
+      "description": "Materias Interactivas en Línea, plataforma virtual de enseñanza y aprendizaje de la UNLaM. +50.000 usuarios.",
+      "highlights": [
+        "Full Stack developer",
+        "PHP",
+        "MySQL",
+        "HTML",
+        "CSS",
+        "jQuery"
+      ],
+      "url": "https://miel.unlam.edu.ar/"
+    },
+    {
+      "name": "MIeL",
+      "startDate": "2010-05-01",
+      "endDate": null,
+      "description": "Materias Interactivas en Línea, plataforma virtual de enseñanza y aprendizaje de la UNLaM. +50.000 usuarios.",
+      "highlights": [
+        "Full Stack developer",
+        "PHP",
+        "MySQL",
+        "HTML",
+        "CSS",
+        "jQuery"
+      ],
+      "url": "https://miel.unlam.edu.ar/"
+    },
+    {
+      "name": "MIeL",
+      "startDate": "2010-05-01",
+      "endDate": null,
+      "description": "Materias Interactivas en Línea, plataforma virtual de enseñanza y aprendizaje de la UNLaM. +50.000 usuarios.",
+      "highlights": [
+        "Full Stack developer",
+        "PHP",
+        "MySQL",
+        "HTML",
+        "CSS",
+        "jQuery"
+      ],
+      "url": "https://miel.unlam.edu.ar/"
     }
   ]
 }

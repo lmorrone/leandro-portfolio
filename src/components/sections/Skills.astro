@@ -8,11 +8,11 @@ import { skills } from "@cv";
     {
       skills.map(({ name, level }) => {
         const classLevel =
-          level == 1
+          level === "1"
             ? "bg-gray-700 hover:bg-gray-600"
-            : level == 2
-              ? "bg-gray-600 hover:bg-gray-500"
-              : "bg-gray-500 hover:bg-gray-400";
+            : level === "2"
+              ? "bg-gray-500 hover:bg-gray-400"
+              : "bg-gray-400 hover:bg-gray-500";
 
         return (
           <li

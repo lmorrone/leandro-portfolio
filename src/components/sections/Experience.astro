@@ -4,12 +4,14 @@ import { work } from "@cv";
 ---
 
 <Section title="Experiencia">
-  <ul class="flex flex-col gap-4 mt-4">
+  <ul class="flex flex-col gap-4">
     {
       work.map(
         ({ name, startDate, endDate, url, position, summary, highlights }) => {
           const startYear = new Date(startDate).getUTCFullYear();
-          const endYear = endDate ? new Date(endDate).getUTCFullYear() : "Actual";
+          const endYear = endDate
+            ? new Date(endDate).getUTCFullYear()
+            : "Actual";
 
           return (
             <li>
@@ -18,7 +20,12 @@ import { work } from "@cv";
                   <div class="flex justify-start items-start gap-2">
                     <h3>
                       {url ? (
-                        <a href={url} target="_blank" class="hover:underline">
+                        <a
+                          href={url}
+                          target="_blank"
+                          class="hover:underline"
+                          title={`Visitar sitio web de ${name}`}
+                        >
                           {name}
                         </a>
                       ) : (

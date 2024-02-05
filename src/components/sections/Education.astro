@@ -4,12 +4,14 @@ import { education } from "@cv";
 ---
 
 <Section title="Educación">
-  <ul class="flex flex-col gap-4 mt-4">
+  <ul class="flex flex-col gap-4">
     {
       education.map(
-        ({ institution, startDate, endDate, url, area, highlights }) => {
+        ({ institution, startDate, endDate, url, area, highlights, award }) => {
           const startYear = new Date(startDate).getUTCFullYear();
-          const endYear = endDate ? new Date(endDate).getUTCFullYear() : "Actual";
+          const endYear = endDate
+            ? new Date(endDate).getUTCFullYear()
+            : "Actual";
 
           return (
             <li>
@@ -18,7 +20,12 @@ import { education } from "@cv";
                   <div class="flex items-center gap-2">
                     <h3>
                       {url ? (
-                        <a href={url} target="_blank" class="hover:underline">
+                        <a
+                          href={url}
+                          target="_blank"
+                          title={`Visitar sitio web de ${institution}`}
+                          class="hover:underline"
+                        >
                           {institution}
                         </a>
                       ) : (
@@ -38,6 +45,7 @@ import { education } from "@cv";
                   </time>
                 </header>
                 <p>{area}</p>
+                {award && <p class="text-xs">{award}</p>}
               </article>
             </li>
           );

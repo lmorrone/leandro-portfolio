@@ -6,17 +6,21 @@ import Education from "@/components/sections/Education.astro";
 import Experience from "@/components/sections/Experience.astro";
 import Hero from "@/components/sections/Hero.astro";
 import KeyboardManager from "@/components/KeyboardManager.astro";
+import Languages from "@/components/sections/Languages.astro";
 import Projects from "@/components/sections/Projects.astro";
 import Skills from "@/components/sections/Skills.astro";
+
+import { basics } from "@cv";
 ---
 
-<Layout title="Leandro Morrone" lang="es">
-  <main class="m-auto px-16 my-16 print:my-8">
+<Layout title={basics.name} lang="es">
+  <main class="m-auto px-8 sm:px-16 my-16 print:my-4 print:px-8">
     <Hero />
     <About />
     <Experience />
     <Education />
     <Skills />
+    <Languages />
     <Projects />
   </main>
 

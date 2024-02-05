@@ -18,6 +18,8 @@ const SOCIAL_ICONS: Record<string, any> = {
   Linkedin: LinkedinIcon,
   X: XIcon,
 };
+
+const linkedinUser = profiles.find((x) => x.network == "Linkedin")?.username;
 ---
 
 <Section>
@@ -35,7 +37,8 @@ const SOCIAL_ICONS: Record<string, any> = {
         <WorldIcon />
         <span class="group-hover:underline">{city}, {region}</span>
       </a>
-      <footer class="flex gap-1 mt-3">
+
+      <footer class="flex gap-1 mt-3 print:hidden">
         {
           email && (
             <SocialButton
@@ -70,7 +73,27 @@ const SOCIAL_ICONS: Record<string, any> = {
           })
         }
       </footer>
+      
+      <footer class="hidden print:flex flex-col gap-1 mt-1">
+        <div class="flex items-center gap-2 text-xs">
+          <EmailIcon className="size-3" />
+          {email}
+        </div>
+        <div class="flex items-center gap-2 text-xs">
+          <PhoneIcon className="size-3" />
+          {phone}
+        </div>
+        {
+          linkedinUser && (
+            <div class="flex items-center gap-2 text-xs">
+              <LinkedinIcon className="size-3" />
+              /{linkedinUser}
+            </div>
+          )
+        }
+      </footer>
     </div>
+
     <figure>
       <img
         src={image}
