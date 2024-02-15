@@ -7,3 +7,10 @@ JSON Resume standard is used as a database: https://jsonresume.org/schema/
 Thanks to [@midudev](https://www.youtube.com/@midulive)
 
 Technologies: [Astro](https://astro.build/), [Tailwind](https://tailwindcss.com/), Javascript, HTML.
+
+## TODO
+- Colores para imprimir (skills)
+- I18n
+- Keyboard footer responsive
+- Publish in netlify drops
+- Publicar BG Maker

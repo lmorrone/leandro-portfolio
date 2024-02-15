@@ -289,40 +289,66 @@
       "url": "https://miel.unlam.edu.ar/"
     },
     {
-      "name": "MIeL",
-      "startDate": "2010-05-01",
+      "name": "APM Tool",
+      "startDate": "2022-05-01",
       "endDate": null,
-      "description": "Materias Interactivas en Línea, plataforma virtual de enseñanza y aprendizaje de la UNLaM. +50.000 usuarios.",
+      "description": "Sistema web para la gestión de proyectos, asignaciones de recursos y facturación de ARTECH.",
       "highlights": [
-        "Full Stack developer",
-        "PHP",
-        "MySQL",
+        "Líder Full Stack",
+        "ASP.Net",
+        "SQL Server",
         "HTML",
         "CSS",
         "jQuery"
       ],
-      "url": "https://miel.unlam.edu.ar/"
+      "url": null
     },
     {
-      "name": "MIeL",
-      "startDate": "2010-05-01",
-      "endDate": null,
-      "description": "Materias Interactivas en Línea, plataforma virtual de enseñanza y aprendizaje de la UNLaM. +50.000 usuarios.",
+      "name": "Quamel",
+      "startDate": "2019-01-01",
+      "endDate": "2020-12-01",
+      "description": "Software para la gestión de calidad y seguridad de las normas ISO 9001 y 27001 para empresas.",
       "highlights": [
-        "Full Stack developer",
-        "PHP",
-        "MySQL",
+        "Líder Full stack",
+        "ASP.Net",
+        "SQL Server",
         "HTML",
         "CSS",
         "jQuery"
       ],
-      "url": "https://miel.unlam.edu.ar/"
+      "url": "https://www.quamel.com/"
     },
     {
-      "name": "MIeL",
-      "startDate": "2010-05-01",
+      "name": "Jarvis / Forecast / Colectoras",
+      "startDate": "2020-03-01",
       "endDate": null,
-      "description": "Materias Interactivas en Línea, plataforma virtual de enseñanza y aprendizaje de la UNLaM. +50.000 usuarios.",
+      "description": "Sistemas de carga y seguimiento de pedidos, proyección de ventas, compras y producción para empresa del rubro cosmética.",
+      "highlights": [
+        "Líder y Backend developer",
+        "ASP.Net",
+        "SQL Server",
+        "SAGE"
+      ],
+      "url": null
+    },
+    {
+      "name": "Bitcointainer",
+      "startDate": "2022-03-01",
+      "endDate": "2022-04-01",
+      "description": "Sitio web institucional para financiera enfocada en la minería de criptomonedas.",
+      "highlights": [
+        "Front-end developer",
+        "HTML",
+        "CSS",
+        "Javascript"
+      ],
+      "url": "https://bitcointainer.io/"
+    },
+    {
+      "name": "Unìre",
+      "startDate": "2017-06-01",
+      "endDate": "2017-11-01",
+      "description": "Sitio web institucional y red de clientes para agencia de formación de parejas.",
       "highlights": [
         "Full Stack developer",
         "PHP",
@@ -331,7 +357,62 @@
         "CSS",
         "jQuery"
       ],
-      "url": "https://miel.unlam.edu.ar/"
+      "url": "https://unire.com.ar/"
+    },
+    {
+      "name": "BG Maker",
+      "startDate": "2021-01-01",
+      "endDate": "2021-01-01",
+      "description": "Sitio web para generación de fondos para diseñadores y otras herramientas de utilidad.",
+      "highlights": [
+        "Proyecto personal",
+        "HTML",
+        "CSS",
+        "Javascript",
+        "p5.js"
+      ],
+      "url": null
+    },
+    {
+      "name": "Adsadsadsa",
+      "startDate": "2017-01-01",
+      "endDate": "2017-02-01",
+      "description": "Performance de música experimental y visuales programados con Pure Data y controlados desde Arduino.",
+      "highlights": [
+        "Proyecto de maestría",
+        "Arduino",
+        "Electrónica",
+        "Pure data",
+        "Processing",
+        "Arte"
+      ],
+      "url": "https://www.youtube.com/watch?v=tsJ2l9Nxra4"
+    },
+    {
+      "name": "Hospedador",
+      "startDate": "2016-10-01",
+      "endDate": "2016-12-01",
+      "description": "Escultura robótica zoomorfa cuyo movimiento es controlado desde un celular y utiliza el mecanismo de Theo Jansen.",
+      "highlights": [
+        "Proyecto de maestría",
+        "Arduino",
+        "Robótica",
+        "Processing",
+        "Arte"
+      ],
+      "url": "https://www.youtube.com/watch?v=jROQrrR8MBw"
+    },
+    {
+      "name": "Armonía de esferas",
+      "startDate": "2015-11-01",
+      "endDate": "2015-12-01",
+      "description": "Instalación sonora con paquetas electrónicas y partlantes inspirada en la teoría pitagórica del mismo nombre.",
+      "highlights": [
+        "Proyecto de maestría",
+        "Electrónica",
+        "Arte sonoro"
+      ],
+      "url": "https://www.youtube.com/watch?v=Odl4IivZPiI"
     }
   ]
 }
