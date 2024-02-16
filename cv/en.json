@@ -1,18 +1,19 @@
 {
   "basics": {
     "name": "Leandro Morrone",
-    "label": "Ingeniero en informática especializado en desarrollado web y docente universitario",
-    "image": "https://media.licdn.com/dms/image/D4D03AQEjZC-Z5C2j5Q/profile-displayphoto-shrink_200_200/0/1702317412683?e=1712793600&v=beta&t=niJGhX3IM0jOI5WGxFJAS4qtGKdNWDJTskPiMfdhEcY",
+    "label": "Computer engineer specialized in web development and university teacher",
+    "image": "profile-photo.jpg",
     "email": "liomorrone@gmail.com",
     "phone": "(+94) 11 6116-0881",
     "url": "https://leandromorrone.com.ar",
-    "summary": "Con más de 10 años de experiencia en desarrollo web, he participado en proyectos de diferentes escalas y disciplinas, como programador, analista, arquitecto de datos o líder. Mi trabajo es principalmente con C#, ASP.Net, PHP, Javascript y SQL. Además de ser un apasionado de la programación, me gusta enseñar y transmitir mis conocimientos a estudiantes y entusiastas.",
+    "summary": "With more than 10 years of experience in web development, I've participated in projects of different sizes and disciplines, as a programmer, analyst, data architect or leader. I mainly works with C#, ASP.Net, PHP, Javascript and SQL. Besides being passionate about programming, I like to teach and transmit my knowledge to students and enthusiasts.",
     "location": {
       "address": "Alsina 259",
       "postalCode": "B1704",
       "city": "Ramos Mejía",
       "countryCode": "AR",
-      "region": "Buenos Aires"
+      "region": "Buenos Aires",
+      "map": "https://www.google.com/maps/place/Buenos+Aires+Metropolitan+Area"
     },
     "profiles": [
       {
@@ -35,49 +36,49 @@
   "work": [
     {
       "name": "ARTECH",
-      "position": "Desarrollador web → Líder de desarrollo",
+      "position": "Web developer → Development leader",
       "url": "https://www.artech-consulting.com.ar/",
       "startDate": "2015-01-01",
       "endDate": null,
-      "summary": "Análisis funcional, diseño arquitectónico, modelado de datos, programación web full-stack y desktop, integración de sistemas, capacitación de personal. Especialidad: Sistemas de gestión empresarial (ventas, operaciones, calidad, reporting). Tecnologías: C#, ASP.Net Core, Razor, SQL Server, PHP, HTML, CSS, Javascript.",
+      "summary": "Functional analysis, solution design, data modeling, full-stack web and desktop programming, systems integration, staff training. Specialty: Business management systems (sales, operations, quality, reporting). Technologies: C#, ASP.Net Core, Razor, SQL Server, PHP, HTML, CSS, Javascript.",
       "highlights": [
-        "Híbrido",
+        "Hybrid",
         "Full-time"
       ]
     },
     {
-      "name": "Universidad Nacional de La Matanza",
-      "position": "Desarrollador web",
+      "name": "National University of La Matanza",
+      "position": "Web developer",
       "url": "https://www.unlam.edu.ar/",
       "startDate": "2010-06-01",
       "endDate": null,
-      "summary": "Diseño, desarrollo, mantenimiento y soporte de MIeL, plataforma web educativa para cursar, dictar y gestionar materias a distancia en la UNLaM. Tecnologías: PHP, MySQL, HTML, CSS, Javascript.",
+      "summary": "Design, development, maintenance and support of MIeL, an educational web platform to take, teach and manage subjects from a distance at UNLaM. Technologies: PHP, MySQL, HTML, CSS, Javascript.",
       "highlights": [
-        "Híbrido",
+        "Hybrid",
         "Part-time"
       ]
     },
     {
-      "name": "Universidad Nacional de La Matanza",
-      "position": "Docente de Computación",
+      "name": "National University of La Matanza",
+      "position": "Computer teacher",
       "url": "https://www.unlam.edu.ar/",
       "startDate": "2014-04-01",
       "endDate": null,
-      "summary": "Tutor en la cátedra Computación Transversal, modalidad semipresencial. Contenido: Windows, internet y paquete de Office (Word, Excel, Power Point). Cargo: Profesor Adjunto concursado.",
+      "summary": "Tutor in the Transversal Computing chair, blended modality. Content: Windows, internet and Office package (Word, Excel, Power Point). Position: Adjunct Professor.",
       "highlights": [
-        "Híbrido",
+        "Hybrid",
         "Part-time"
       ]
     },
     {
       "name": "Freelance",
-      "position": "Desarrollador web",
+      "position": "Web developer",
       "url": null,
       "startDate": "2013-01-01",
       "endDate": "2016-01-01",
-      "summary": "Desarrollo de sitios web independiente para particulares. Tecnologías: HTML, CSS, Javascript, PHP, MySQL.",
+      "summary": "Independent website development for individuals. Technologies: HTML, CSS, Javascript, PHP, MySQL.",
       "highlights": [
-        "Remoto"
+        "Remote"
       ]
     }
   ],
@@ -96,46 +97,46 @@
   ],
   "education": [
     {
-      "institution": "Universidad Nacional de Tres de Febrero",
+      "institution": "National University of Tres de Febrero",
       "url": "https://untref.edu.ar/",
-      "area": "Maestría en Tecnología y Estética de las Artes Electrónicas",
-      "studyType": "Maestría",
+      "area": "Master in Technology and Aesthetics of New Media Art",
+      "studyType": "Master",
       "startDate": "2015-01-01",
       "endDate": "2016-12-31",
       "score": null,
       "award": null,
       "courses": [],
       "highlights": [
-        "Incompleto"
+        "Incomplete"
       ]
     },
     {
-      "institution": "Universidad Nacional de La Matanza",
+      "institution": "National University of La Matanza",
       "url": "https://www.unlam.edu.ar/",
-      "area": "Ingeniería en Informática",
-      "studyType": "Ingeniería",
+      "area": "Computer engineering",
+      "studyType": "Engineering",
       "startDate": "2008-01-01",
       "endDate": "2013-12-31",
       "score": "8.7",
-      "award": "Premio \"A los mejores egresados de carreras de ingeniería de universidades argentinas\" por el mejor promedio de ingeniería en la UNLaM en 2014. Otorgó la Academia Nacional de Ingeniería.",
+      "award": "Award \"To the best engineering graduates from Argentine universities\" for the best engineering score at UNLaM in 2014. Awarded by the National Academy of Engineering.",
       "courses": [],
       "highlights": [
-        "Completo"
+        "Complete"
       ]
     }
   ],
   "awards": [
     {
-      "title": "A los mejores egresados de carreras de ingeniería de universidades argentinas",
+      "title": "To the best engineering graduates from Argentine universities",
       "date": "2014-11-01",
-      "awarder": "Academia Nacional de Ingeniería",
-      "summary": "Mejor promedio en carreras de ingeniería de la UNLaM en 2014."
+      "awarder": "National Academy of Engineering",
+      "summary": "Best engineering score at UNLaM in 2014."
     },
     {
-      "title": "Esperanzas de la Patria",
+      "title": "Hopes of the Country",
       "date": "2007-10-01",
       "awarder": "Rotary Club La Matanza",
-      "summary": "Mejor promedio de la escuela secundaria."
+      "summary": "Best score at high school."
     }
   ],
   "certificates": [
@@ -249,12 +250,12 @@
   ],
   "languages": [
     {
-      "language": "Español",
-      "fluency": "Nativo"
+      "language": "Spanish",
+      "fluency": "Native"
     },
     {
-      "language": "Inglés",
-      "fluency": "Profesional básico"
+      "language": "English",
+      "fluency": "Basic professional"
     }
   ],
   "interests": [
@@ -277,7 +278,7 @@
       "name": "MIeL",
       "startDate": "2010-05-01",
       "endDate": null,
-      "description": "Materias Interactivas en Línea, plataforma virtual de enseñanza y aprendizaje de la UNLaM. +50.000 usuarios.",
+      "description": "Acronym in Spanish for Online Interactive Subjects, virtual teaching and learning platform of the UNLaM. +50,000 users.",
       "highlights": [
         "Full Stack developer",
         "PHP",
@@ -292,9 +293,9 @@
       "name": "APM Tool",
       "startDate": "2022-05-01",
       "endDate": null,
-      "description": "Sistema web para la gestión de proyectos, asignaciones de recursos y facturación de ARTECH.",
+      "description": "ARTECH web system for project management, resource assignments, billing and reporting.",
       "highlights": [
-        "Líder Full Stack",
+        "Full Stack leader",
         "ASP.Net",
         "SQL Server",
         "HTML",
@@ -307,9 +308,9 @@
       "name": "Quamel",
       "startDate": "2019-01-01",
       "endDate": "2020-12-01",
-      "description": "Software para la gestión de calidad y seguridad de las normas ISO 9001 y 27001 para empresas.",
+      "description": "Software for quality and information security management of ISO 9001 and 27001 standards for companies. +100 users",
       "highlights": [
-        "Líder Full stack",
+        "Full stack leader",
         "ASP.Net",
         "SQL Server",
         "HTML",
@@ -319,12 +320,12 @@
       "url": "https://www.quamel.com/"
     },
     {
-      "name": "Jarvis / Forecast / Colectoras",
+      "name": "Jarvis / Forecast / Collectors",
       "startDate": "2020-03-01",
       "endDate": null,
-      "description": "Sistemas de carga y seguimiento de pedidos, proyección de ventas, compras y producción para empresa del rubro cosmética.",
+      "description": "Sales order entry and tracking systems, sales projection, purchasing and production for a cosmetic company.",
       "highlights": [
-        "Líder y Backend developer",
+        "Leader & Backend developer",
         "ASP.Net",
         "SQL Server",
         "SAGE"
@@ -335,7 +336,7 @@
       "name": "Bitcointainer",
       "startDate": "2022-03-01",
       "endDate": "2022-04-01",
-      "description": "Sitio web institucional para financiera enfocada en la minería de criptomonedas.",
+      "description": "Institutional website for finance focused on cryptocurrency mining.",
       "highlights": [
         "Front-end developer",
         "HTML",
@@ -348,7 +349,7 @@
       "name": "Unìre",
       "startDate": "2017-06-01",
       "endDate": "2017-11-01",
-      "description": "Sitio web institucional y red de clientes para agencia de formación de parejas.",
+      "description": "Institutional website and social network for agency dedicated to finding couples.",
       "highlights": [
         "Full Stack developer",
         "PHP",
@@ -363,9 +364,9 @@
       "name": "BG Maker",
       "startDate": "2021-01-01",
       "endDate": "2021-01-01",
-      "description": "Sitio web para generación de fondos para diseñadores y otras herramientas de utilidad.",
+      "description": "Website to generate backgrounds for designers and other useful tools.",
       "highlights": [
-        "Proyecto personal",
+        "Personal project",
         "HTML",
         "CSS",
         "Javascript",
@@ -377,14 +378,14 @@
       "name": "Adsadsadsa",
       "startDate": "2017-01-01",
       "endDate": "2017-02-01",
-      "description": "Performance de música experimental y visuales programados con Pure Data y controlados desde Arduino.",
+      "description": "Experimental music performance and visuals programmed with Pure Data and controlled from Arduino.",
       "highlights": [
-        "Proyecto de maestría",
+        "Master's project",
         "Arduino",
-        "Electrónica",
+        "Electronic",
         "Pure data",
         "Processing",
-        "Arte"
+        "Art"
       ],
       "url": "https://www.youtube.com/watch?v=tsJ2l9Nxra4"
     },
@@ -392,25 +393,25 @@
       "name": "Hospedador",
       "startDate": "2016-10-01",
       "endDate": "2016-12-01",
-      "description": "Escultura robótica zoomorfa cuyo movimiento es controlado desde un celular y utiliza el mecanismo de Theo Jansen.",
+      "description": "Zoomorphic robotic sculpture whose movement is controlled from a smartphone and uses Theo Jansen's mechanism.",
       "highlights": [
-        "Proyecto de maestría",
+        "Master's project",
         "Arduino",
-        "Robótica",
+        "Robotic",
         "Processing",
-        "Arte"
+        "Art"
       ],
       "url": "https://www.youtube.com/watch?v=jROQrrR8MBw"
     },
     {
-      "name": "Armonía de esferas",
+      "name": "Harmony of spheres",
       "startDate": "2015-11-01",
       "endDate": "2015-12-01",
-      "description": "Instalación sonora con paquetas electrónicas y partlantes inspirada en la teoría pitagórica del mismo nombre.",
+      "description": "Sound installation with electronic panels and speakers inspired by the Pythagorean theory of the same name.",
       "highlights": [
-        "Proyecto de maestría",
-        "Electrónica",
-        "Arte sonoro"
+        "Master's project",
+        "Electronic",
+        "Sound art"
       ],
       "url": "https://www.youtube.com/watch?v=Odl4IivZPiI"
     }

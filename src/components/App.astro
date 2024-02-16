@@ -1,0 +1,31 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import About from "@/components/sections/About.astro";
+import Education from "@/components/sections/Education.astro";
+import Experience from "@/components/sections/Experience.astro";
+import Hero from "@/components/sections/Hero.astro";
+import KeyboardManager from "@/components/KeyboardManager.astro";
+import Languages from "@/components/sections/Languages.astro";
+import Projects from "@/components/sections/Projects.astro";
+import Skills from "@/components/sections/Skills.astro";
+
+import { getCv } from "@cv";
+
+const { currentLocale } = Astro;
+const { basics } = getCv(currentLocale);
+---
+
+<Layout title={basics.name} lang={currentLocale ?? "es"}>
+  <main class="m-auto my-16 px-8 sm:px-16 print:my-4 print:px-8">
+    <Hero />
+    <About />
+    <Experience />
+    <Education />
+    <Skills />
+    <Languages />
+    <Projects />
+  </main>
+
+  <KeyboardManager />
+</Layout>;

@@ -1,9 +1,15 @@
 ---
 import Section from "@/components/Section.astro";
-import { languages } from "@cv";
+import { getI18n } from "@/i18n";
+import { getCv } from "@cv";
+
+const { currentLocale } = Astro;
+const { languages } = getCv(currentLocale);
+
+const i18n = getI18n(currentLocale);
 ---
 
-<Section title="Idiomas">
+<Section title={i18n.TITLE_LANGUAGES}>
   <ul>
     {
       languages.map(({ language, fluency }) => {

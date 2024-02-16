@@ -1,29 +1,35 @@
 ---
 import Section from "@/components/Section.astro";
-import { education } from "@cv";
+import { getI18n } from "@/i18n";
+import { getCv } from "@cv";
+
+const { currentLocale } = Astro;
+const { education } = getCv(currentLocale);
+
+const i18n = getI18n(currentLocale);
 ---
 
-<Section title="Educación">
-  <ul class="flex flex-col gap-4">
+<Section title={i18n.TITLE_EDUCATION}>
+  <ul class="flex flex-col gap-5">
     {
       education.map(
         ({ institution, startDate, endDate, url, area, highlights, award }) => {
           const startYear = new Date(startDate).getUTCFullYear();
           const endYear = endDate
             ? new Date(endDate).getUTCFullYear()
-            : "Actual";
+            : i18n.CURRENT;
 
           return (
             <li>
               <article class="flex flex-col gap-1">
-                <header class="flex justify-between items-start">
+                <header class="flex items-start justify-between">
                   <div class="flex items-center gap-2">
                     <h3 class="font-semibold">
                       {url ? (
                         <a
                           href={url}
                           target="_blank"
-                          title={`Visitar sitio web de ${institution}`}
+                          title={`${i18n.VISIT_WEBSITE} ${institution}`}
                           class="hover:underline"
                         >
                           {institution}
@@ -34,7 +40,7 @@ import { education } from "@cv";
                     </h3>
                     <div class="flex items-center gap-1">
                       {highlights.map((highlight) => (
-                        <span class="px-2 py-1 bg-gray-100 text-xs text-gray-950 font-semibold rounded-md hover:bg-gray-50 transition-all">
+                        <span class="rounded-md bg-gray-100 px-2 py-1 text-xs font-semibold text-gray-950 transition-all hover:bg-gray-50">
                           {highlight}
                         </span>
                       ))}
@@ -49,7 +55,7 @@ import { education } from "@cv";
               </article>
             </li>
           );
-        }
+        },
       )
     }
   </ul>

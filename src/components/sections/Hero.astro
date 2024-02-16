@@ -1,6 +1,4 @@
 ---
-import { basics } from "@cv";
-
 import EmailIcon from "@/icons/EmailIcon.astro";
 import GithubIcon from "@/icons/GithubIcon.astro";
 import LinkedinIcon from "@/icons/LinkedinIcon.astro";
@@ -10,8 +8,15 @@ import WorldIcon from "@/icons/WorldIcon.astro";
 import XIcon from "@/icons/XIcon.astro";
 import SocialButton from "@/components/SocialButton.astro";
 
+import { getCv } from "@cv";
+import { getI18n } from "@/i18n";
+
+const { currentLocale } = Astro;
+const { basics } = getCv(currentLocale);
+const i18n = getI18n(currentLocale);
+
 const { name, label, image, location, profiles, phone, email } = basics;
-const { city, region } = location;
+const { city, region, countryCode, map } = location;
 
 const SOCIAL_ICONS: Record<string, any> = {
   GitHub: GithubIcon,
@@ -23,27 +28,27 @@ const linkedinUser = profiles.find((x) => x.network == "Linkedin")?.username;
 ---
 
 <Section>
-  <div class="flex flex-row justify-between items-center gap-4">
+  <div class="flex flex-row items-center justify-between gap-4">
     <div>
       <h1 class="text-2xl font-bold">{name}</h1>
-      <p class="mt-2 mb-2">
+      <p class="mb-2 mt-2">
         {label}
       </p>
       <a
-        href="https://www.google.com/maps/place/Buenos+Aires+Metropolitan+Area"
+        href={map}
         target="_blank"
-        class="flex items-center gap-2 text-xs group"
+        class="group inline-flex items-center gap-2 text-xs"
       >
         <WorldIcon />
-        <span class="group-hover:underline">{city}, {region}</span>
+        <span class="group-hover:underline">{city}, {region}, {countryCode}</span>
       </a>
 
-      <footer class="flex gap-1 mt-3 print:hidden">
+      <footer class="mt-3 flex gap-1 print:hidden">
         {
           email && (
             <SocialButton
               href={`mailto:${email}`}
-              title={`Enviar un email a ${name} al correo ${email}`}
+              title={`${i18n.SEND_MAIL_TO} ${name} ${i18n.AT_EMAIL} ${email}`}
             >
               <EmailIcon />
             </SocialButton>
@@ -53,19 +58,19 @@ const linkedinUser = profiles.find((x) => x.network == "Linkedin")?.username;
           phone && (
             <SocialButton
               href={`tel:${email}`}
-              title={`Llamar por teléfono a ${name} al número ${email}`}
+              title={`${i18n.CALL_TO} ${name} ${i18n.AT_NUMBER} ${phone}`}
             >
               <PhoneIcon />
             </SocialButton>
           )
         }
         {
-          profiles.map(({ network, url, username }) => {
+          profiles.map(({ network, url }) => {
             const Icon = SOCIAL_ICONS[network];
             return (
               <SocialButton
                 href={url}
-                title={`Visitar el perfil de ${name} en ${network}`}
+                title={`${i18n.VISIT_PROFILE} ${name} ${i18n.IN} ${network}`}
               >
                 <Icon />
               </SocialButton>
@@ -73,8 +78,8 @@ const linkedinUser = profiles.find((x) => x.network == "Linkedin")?.username;
           })
         }
       </footer>
-      
-      <footer class="hidden print:flex flex-col gap-1 mt-1">
+
+      <footer class="mt-1 hidden flex-col gap-1 print:flex">
         <div class="flex items-center gap-2 text-xs">
           <EmailIcon className="size-3" />
           {email}
@@ -86,8 +91,7 @@ const linkedinUser = profiles.find((x) => x.network == "Linkedin")?.username;
         {
           linkedinUser && (
             <div class="flex items-center gap-2 text-xs">
-              <LinkedinIcon className="size-3" />
-              /{linkedinUser}
+              <LinkedinIcon className="size-3" />/{linkedinUser}
             </div>
           )
         }
@@ -98,7 +102,7 @@ const linkedinUser = profiles.find((x) => x.network == "Linkedin")?.username;
       <img
         src={image}
         alt={name}
-        class="aspect-square object-cover w-32 rounded-xl"
+        class="aspect-square w-32 rounded-xl object-cover"
       />
     </figure>
   </div>

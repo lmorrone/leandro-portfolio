@@ -1,0 +1,419 @@
+{
+  "basics": {
+    "name": "Leandro Morrone",
+    "label": "Ingeniero en informática especializado en desarrollado web y docente universitario",
+    "image": "profile-photo.jpg",
+    "email": "liomorrone@gmail.com",
+    "phone": "(+94) 11 6116-0881",
+    "url": "https://leandromorrone.com.ar",
+    "summary": "Con más de 10 años de experiencia en desarrollo web, he participado en proyectos de diferentes escalas y disciplinas, como programador, analista, arquitecto de datos o líder. Mi trabajo es principalmente con C#, ASP.Net, PHP, Javascript y SQL. Además de ser un apasionado de la programación, me gusta enseñar y transmitir mis conocimientos a estudiantes y entusiastas.",
+    "location": {
+      "address": "Alsina 259",
+      "postalCode": "B1704",
+      "city": "Ramos Mejía",
+      "countryCode": "AR",
+      "region": "Buenos Aires",
+      "map": "https://www.google.com/maps/place/Buenos+Aires+Metropolitan+Area"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "lmorrone",
+        "url": "https://github.com/lmorrone/"
+      },
+      {
+        "network": "Linkedin",
+        "username": "leandro-morrone",
+        "url": "https://www.linkedin.com/in/leandro-morrone/"
+      },
+      {
+        "network": "X",
+        "username": "leandro_morrone",
+        "url": "https://twitter.com/leandro_morrone/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "ARTECH",
+      "position": "Desarrollador web → Líder de desarrollo",
+      "url": "https://www.artech-consulting.com.ar/",
+      "startDate": "2015-01-01",
+      "endDate": null,
+      "summary": "Análisis funcional, diseño arquitectónico, modelado de datos, programación web full-stack y desktop, integración de sistemas, capacitación de personal. Especialidad: Sistemas de gestión empresarial (ventas, operaciones, calidad, reporting). Tecnologías: C#, ASP.Net Core, Razor, SQL Server, PHP, HTML, CSS, Javascript.",
+      "highlights": [
+        "Híbrido",
+        "Full-time"
+      ]
+    },
+    {
+      "name": "Universidad Nacional de La Matanza",
+      "position": "Desarrollador web",
+      "url": "https://www.unlam.edu.ar/",
+      "startDate": "2010-06-01",
+      "endDate": null,
+      "summary": "Diseño, desarrollo, mantenimiento y soporte de MIeL, plataforma web educativa para cursar, dictar y gestionar materias a distancia en la UNLaM. Tecnologías: PHP, MySQL, HTML, CSS, Javascript.",
+      "highlights": [
+        "Híbrido",
+        "Part-time"
+      ]
+    },
+    {
+      "name": "Universidad Nacional de La Matanza",
+      "position": "Docente de Computación",
+      "url": "https://www.unlam.edu.ar/",
+      "startDate": "2014-04-01",
+      "endDate": null,
+      "summary": "Tutor en la cátedra Computación Transversal, modalidad semipresencial. Contenido: Windows, internet y paquete de Office (Word, Excel, Power Point). Cargo: Profesor Adjunto concursado.",
+      "highlights": [
+        "Híbrido",
+        "Part-time"
+      ]
+    },
+    {
+      "name": "Freelance",
+      "position": "Desarrollador web",
+      "url": null,
+      "startDate": "2013-01-01",
+      "endDate": "2016-01-01",
+      "summary": "Desarrollo de sitios web independiente para particulares. Tecnologías: HTML, CSS, Javascript, PHP, MySQL.",
+      "highlights": [
+        "Remoto"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Organization",
+      "position": "Volunteer",
+      "url": "https://organization.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Description…",
+      "highlights": [
+        "Awarded 'Volunteer of the Month'"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad Nacional de Tres de Febrero",
+      "url": "https://untref.edu.ar/",
+      "area": "Maestría en Tecnología y Estética de las Artes Electrónicas",
+      "studyType": "Maestría",
+      "startDate": "2015-01-01",
+      "endDate": "2016-12-31",
+      "score": null,
+      "award": null,
+      "courses": [],
+      "highlights": [
+        "Incompleto"
+      ]
+    },
+    {
+      "institution": "Universidad Nacional de La Matanza",
+      "url": "https://www.unlam.edu.ar/",
+      "area": "Ingeniería en Informática",
+      "studyType": "Ingeniería",
+      "startDate": "2008-01-01",
+      "endDate": "2013-12-31",
+      "score": "8.7",
+      "award": "Premio \"A los mejores egresados de carreras de ingeniería de universidades argentinas\" por el mejor promedio de ingeniería en la UNLaM en 2014. Otorgó la Academia Nacional de Ingeniería.",
+      "courses": [],
+      "highlights": [
+        "Completo"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "A los mejores egresados de carreras de ingeniería de universidades argentinas",
+      "date": "2014-11-01",
+      "awarder": "Academia Nacional de Ingeniería",
+      "summary": "Mejor promedio en carreras de ingeniería de la UNLaM en 2014."
+    },
+    {
+      "title": "Esperanzas de la Patria",
+      "date": "2007-10-01",
+      "awarder": "Rotary Club La Matanza",
+      "summary": "Mejor promedio de la escuela secundaria."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }
+  ],
+  "skills": [
+    {
+      "name": "C#/.Net Core",
+      "level": "1",
+      "keywords": []
+    },
+    {
+      "name": "ASP.Net MVC/API",
+      "level": "1",
+      "keywords": []
+    },
+    {
+      "name": "SQL Server",
+      "level": "1",
+      "keywords": []
+    },
+    {
+      "name": "PHP",
+      "level": "1",
+      "keywords": []
+    },
+    {
+      "name": "MySQL",
+      "level": "1",
+      "keywords": []
+    },
+    {
+      "name": "Git",
+      "level": "1",
+      "keywords": []
+    },
+    {
+      "name": "MS Office",
+      "level": "1",
+      "keywords": []
+    },
+    {
+      "name": "HTML/CSS",
+      "level": "1",
+      "keywords": []
+    },
+    {
+      "name": "Javascript",
+      "level": "1",
+      "keywords": []
+    },
+    {
+      "name": "jQuery",
+      "level": "1",
+      "keywords": []
+    },
+    {
+      "name": "Bootstrap",
+      "level": "1",
+      "keywords": []
+    },
+    {
+      "name": "Tailwind",
+      "level": "2",
+      "keywords": []
+    },
+    {
+      "name": "React.js",
+      "level": "2",
+      "keywords": []
+    },
+    {
+      "name": "C++",
+      "level": "2",
+      "keywords": []
+    },
+    {
+      "name": "Photoshop",
+      "level": "2",
+      "keywords": []
+    },
+    {
+      "name": "Docker",
+      "level": "3",
+      "keywords": []
+    },
+    {
+      "name": "Azure",
+      "level": "3",
+      "keywords": []
+    },
+    {
+      "name": "Arduino",
+      "level": "3",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    },
+    {
+      "language": "Inglés",
+      "fluency": "Profesional básico"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }
+  ],
+  "projects": [
+    {
+      "name": "MIeL",
+      "startDate": "2010-05-01",
+      "endDate": null,
+      "description": "Materias Interactivas en Línea, plataforma virtual de enseñanza y aprendizaje de la UNLaM. +50.000 usuarios.",
+      "highlights": [
+        "Full Stack developer",
+        "PHP",
+        "MySQL",
+        "HTML",
+        "CSS",
+        "jQuery"
+      ],
+      "url": "https://miel.unlam.edu.ar/"
+    },
+    {
+      "name": "APM Tool",
+      "startDate": "2022-05-01",
+      "endDate": null,
+      "description": "Sistema web para la gestión de proyectos, asignaciones de recursos y facturación de ARTECH.",
+      "highlights": [
+        "Líder Full Stack",
+        "ASP.Net",
+        "SQL Server",
+        "HTML",
+        "CSS",
+        "jQuery"
+      ],
+      "url": null
+    },
+    {
+      "name": "Quamel",
+      "startDate": "2019-01-01",
+      "endDate": "2020-12-01",
+      "description": "Software para la gestión de calidad y seguridad de las normas ISO 9001 y 27001 para empresas.",
+      "highlights": [
+        "Líder Full stack",
+        "ASP.Net",
+        "SQL Server",
+        "HTML",
+        "CSS",
+        "jQuery"
+      ],
+      "url": "https://www.quamel.com/"
+    },
+    {
+      "name": "Jarvis / Forecast / Colectoras",
+      "startDate": "2020-03-01",
+      "endDate": null,
+      "description": "Sistemas de carga y seguimiento de pedidos, proyección de ventas, compras y producción para empresa del rubro cosmética.",
+      "highlights": [
+        "Líder y Backend developer",
+        "ASP.Net",
+        "SQL Server",
+        "SAGE"
+      ],
+      "url": null
+    },
+    {
+      "name": "Bitcointainer",
+      "startDate": "2022-03-01",
+      "endDate": "2022-04-01",
+      "description": "Sitio web institucional para financiera enfocada en la minería de criptomonedas.",
+      "highlights": [
+        "Front-end developer",
+        "HTML",
+        "CSS",
+        "Javascript"
+      ],
+      "url": "https://bitcointainer.io/"
+    },
+    {
+      "name": "Unìre",
+      "startDate": "2017-06-01",
+      "endDate": "2017-11-01",
+      "description": "Sitio web institucional y red de clientes para agencia de formación de parejas.",
+      "highlights": [
+        "Full Stack developer",
+        "PHP",
+        "MySQL",
+        "HTML",
+        "CSS",
+        "jQuery"
+      ],
+      "url": "https://unire.com.ar/"
+    },
+    {
+      "name": "BG Maker",
+      "startDate": "2021-01-01",
+      "endDate": "2021-01-01",
+      "description": "Sitio web para generación de fondos para diseñadores y otras herramientas de utilidad.",
+      "highlights": [
+        "Proyecto personal",
+        "HTML",
+        "CSS",
+        "Javascript",
+        "p5.js"
+      ],
+      "url": null
+    },
+    {
+      "name": "Adsadsadsa",
+      "startDate": "2017-01-01",
+      "endDate": "2017-02-01",
+      "description": "Performance de música experimental y visuales programados con Pure Data y controlados desde Arduino.",
+      "highlights": [
+        "Proyecto de maestría",
+        "Arduino",
+        "Electrónica",
+        "Pure data",
+        "Processing",
+        "Arte"
+      ],
+      "url": "https://www.youtube.com/watch?v=tsJ2l9Nxra4"
+    },
+    {
+      "name": "Hospedador",
+      "startDate": "2016-10-01",
+      "endDate": "2016-12-01",
+      "description": "Escultura robótica zoomorfa cuyo movimiento es controlado desde un celular y utiliza el mecanismo de Theo Jansen.",
+      "highlights": [
+        "Proyecto de maestría",
+        "Arduino",
+        "Robótica",
+        "Processing",
+        "Arte"
+      ],
+      "url": "https://www.youtube.com/watch?v=jROQrrR8MBw"
+    },
+    {
+      "name": "Armonía de esferas",
+      "startDate": "2015-11-01",
+      "endDate": "2015-12-01",
+      "description": "Instalación sonora con plaquetas electrónicas y partlantes inspirada en la teoría pitagórica del mismo nombre.",
+      "highlights": [
+        "Proyecto de maestría",
+        "Electrónica",
+        "Arte sonoro"
+      ],
+      "url": "https://www.youtube.com/watch?v=Odl4IivZPiI"
+    }
+  ]
+}

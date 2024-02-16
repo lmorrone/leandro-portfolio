@@ -1,19 +1,30 @@
 ---
 import Section from "@/components/Section.astro";
-import { projects } from "@cv";
+import { getI18n } from "@/i18n";
+import { getCv } from "@cv";
+
+const { currentLocale } = Astro;
+const { projects } = getCv(currentLocale);
+
+const i18n = getI18n(currentLocale);
 ---
 
-<Section title="Proyectos">
-  <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 -mx-4">
+<Section title={i18n.TITLE_PROJECTS}>
+  <ul class="-mx-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
     {
       projects.map(({ name, url, description, highlights }) => {
         return (
-          <li class="border border-solid border-gray-200 rounded-lg p-4">
-            <article class="flex flex-col gap-2 justify-between h-full">
+          <li class="rounded-lg border border-solid border-gray-200 p-4">
+            <article class="flex h-full flex-col justify-between gap-2">
               <header>
                 <h3 class="text-md font-semibold">
                   {url ? (
-                    <a href={url} class="group" target="_blank">
+                    <a
+                      href={url}
+                      title={`${i18n.VISIT_WEBSITE} ${name}`}
+                      class="group"
+                      target="_blank"
+                    >
                       <span class="group-hover:underline">{name}</span>
                       <span class="text-green-500">&bull;</span>
                     </a>
@@ -21,11 +32,11 @@ import { projects } from "@cv";
                     <span>{name}</span>
                   )}
                 </h3>
-                <p class="text-xs flex-1">{description}</p>
+                <p class="flex-1 text-xs">{description}</p>
               </header>
-              <footer class="flex flex-wrap gap-1 mt-1">
+              <footer class="mt-1 flex flex-wrap gap-1">
                 {highlights.map((highlight) => (
-                  <span class="px-2 bg-gray-100 text-[0.7rem] text-gray-950 font-semibold rounded-md hover:bg-gray-50 transition-all">
+                  <span class="rounded-md bg-gray-100 px-2 text-[0.7rem] font-semibold text-gray-950 transition-all hover:bg-gray-50">
                     {highlight}
                   </span>
                 ))}
