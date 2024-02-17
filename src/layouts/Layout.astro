@@ -1,4 +1,6 @@
 ---
+import { ViewTransitions, fade } from 'astro:transitions';
+
 interface Props {
   title: string;
   lang: string;
@@ -16,8 +18,9 @@ const { title, lang } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <ViewTransitions />
   </head>
-  <body class="bg-white">
+  <body class="bg-white"}>
     <slot />
   </body>
 </html>

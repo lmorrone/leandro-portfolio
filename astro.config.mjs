@@ -12,5 +12,8 @@ export default defineConfig({
       redirectToDefaultLocale: false
     }
   },
+  server: {
+    host: true
+  },
   integrations: [tailwind()],
 });

@@ -1,6 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
 
+import ThemeSwitcher from "@/components/ThemeSwitcher.astro";
+import LanguageSelector from "@/components/LanguageSelector.astro";
 import About from "@/components/sections/About.astro";
 import Education from "@/components/sections/Education.astro";
 import Experience from "@/components/sections/Experience.astro";
@@ -17,6 +19,12 @@ const { basics } = getCv(currentLocale);
 ---
 
 <Layout title={basics.name} lang={currentLocale ?? "es"}>
+  <header
+    class="absolute right-4 top-4 z-10 flex items-start gap-2 print:hidden"
+  >
+    <ThemeSwitcher />
+    <LanguageSelector />
+  </header>
   <main class="m-auto my-16 px-8 sm:px-16 print:my-4 print:px-8">
     <Hero />
     <About />
@@ -26,6 +34,5 @@ const { basics } = getCv(currentLocale);
     <Languages />
     <Projects />
   </main>
-
   <KeyboardManager />
-</Layout>;
+</Layout>

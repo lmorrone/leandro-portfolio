@@ -1,0 +1,52 @@
+---
+import FlagSpanishIcon from "@/icons/FlagSpanishIcon.astro";
+import FlagEnglishIcon from "@/icons/FlagEnglishIcon.astro";
+import { getI18n, getInvertedLanguage } from "@/i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18n(currentLocale);
+const otherLanguage = getInvertedLanguage(currentLocale);
+---
+
+<div class="group flex flex-col gap-1">
+  <button
+    id="lang1"
+    class="inline-flex size-8 cursor-pointer items-center justify-center rounded-full border border-gray-200 transition-all hover:bg-gray-100"
+  >
+    {
+      currentLocale !== "en" ? (
+        <FlagSpanishIcon className="size-5" />
+      ) : (
+        <FlagEnglishIcon className="size-5" />
+      )
+    }
+  </button>
+  <a
+    id="lang2"
+    href={`/${otherLanguage}`}
+    title={i18n.SWITCH_LANG}
+    class="animate-flip-down animate-duration-200 animate-ease-in-out hidden size-8 cursor-pointer items-center justify-center rounded-full border border-gray-200 transition-all hover:bg-gray-100 group-hover:inline-flex"
+  >
+    {
+      currentLocale !== "en" ? (
+        <FlagEnglishIcon className="size-5" />
+      ) : (
+        <FlagSpanishIcon className="size-5" />
+      )
+    }
+  </a>
+</div>
+
+<script>
+  const lang1 = document.getElementById("lang1");
+  const lang2 = document.getElementById("lang2");
+
+  lang1.addEventListener("focusin", (event) => {
+    lang2.classList.remove("hidden");
+    lang2.classList.add("inline-flex");
+  });
+  lang2.addEventListener("focusout", (event) => {
+    lang2.classList.add("hidden");
+    lang2.classList.remove("inline-flex");
+  });
+</script>

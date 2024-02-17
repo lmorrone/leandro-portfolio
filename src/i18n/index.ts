@@ -16,3 +16,14 @@ export const getI18n = (lang = LANG.SPANISH) => {
       return spanish;
   }
 };
+
+export const getInvertedLanguage = (lang = LANG.SPANISH) => {
+  switch (lang) {
+    case LANG.SPANISH:
+      return LANG.ENGLISH;
+    case LANG.ENGLISH:
+      return LANG.SPANISH;
+    default:
+      return LANG.ENGLISH;
+  }
+}

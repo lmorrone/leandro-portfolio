@@ -10,7 +10,6 @@ Technologies: [Astro](https://astro.build/), [Tailwind](https://tailwindcss.com/
 
 ## TODO
 - Colores para imprimir (skills)
-- I18n
+- dark mode
 - Keyboard footer responsive
-- Publish in netlify drops
 - Publicar BG Maker

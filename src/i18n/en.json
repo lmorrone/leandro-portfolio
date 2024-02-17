@@ -20,5 +20,6 @@
   "KEY_ACTION_CONTACT_EMAIL": "Contact by email",
   "KEY_PRESS": "Press",
   "KEY_TO_OPEN": "to open the command palette",
-  "KEY_SEARCH_COMMAND": "Search command..."
+  "KEY_SEARCH_COMMAND": "Search command...",
+  "SWITCH_LANG": "Cambiar a idioma español"
 }
