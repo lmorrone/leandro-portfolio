@@ -47,16 +47,16 @@ const emailInfo = {
 ---
 
 <footer
-  class="fixed bottom-0 w-full border-t border-solid bg-white p-2 text-center font-sans text-sm print:hidden"
+  class="fixed bottom-0 w-full border-t border-solid border-gray-200 bg-white p-2 text-center font-sans text-sm dark:border-gray-700 dark:bg-gray-950 print:hidden"
 >
   <div>
     {i18n.KEY_PRESS}
     <kbd
-      class="rounded-sm border border-solid border-gray-300 bg-gray-200 px-1 text-sm"
+      class="rounded-sm border border-solid border-gray-300 bg-gray-200 px-1 text-sm dark:border-gray-700 dark:bg-gray-800"
       >Ctrl</kbd
     > +
     <kbd
-      class="rounded-sm border border-solid border-gray-300 bg-gray-200 px-1 text-sm"
+      class="rounded-sm border border-solid border-gray-300 bg-gray-200 px-1 text-sm dark:border-gray-700 dark:bg-gray-800"
       >K</kbd
     >
     {i18n.KEY_TO_OPEN}
@@ -75,6 +75,16 @@ const emailInfo = {
   import "ninja-keys";
 
   const ninja = document.querySelector("ninja-keys");
+
+  if (
+    localStorage.theme === "dark" ||
+    (!("theme" in localStorage) &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches)
+  ) {
+    ninja?.classList.add("dark");
+  } else {
+    ninja?.classList.remove("dark");
+  }
 
   if (ninja != null) {
     const profilesInfo = ninja.getAttribute("data-profiles");

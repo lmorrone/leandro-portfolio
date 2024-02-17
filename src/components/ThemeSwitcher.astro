@@ -3,7 +3,28 @@ import SwitchThemeIcon from "@/icons/SwitchThemeIcon.astro";
 ---
 
 <button
-  class="inline-flex size-8 cursor-pointer items-center justify-center rounded-full border border-gray-200 transition-all hover:bg-gray-100 hover:text-gray-950"
+  class="inline-flex size-8 cursor-pointer items-center justify-center rounded-full border border-gray-200 transition-all hover:bg-gray-100 hover:text-gray-950 dark:border-gray-700 dark:hover:bg-gray-800 dark:hover:text-gray-100"
 >
   <SwitchThemeIcon className="size-5" />
 </button>
+
+<script>
+  const button = document.querySelector("button");
+  const ninja = document.querySelector("ninja-keys");
+
+  button.addEventListener("click", () => {
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.documentElement.classList.remove("dark");
+      ninja.classList.remove("dark");
+      localStorage.theme = "light";
+    } else {
+      document.documentElement.classList.add("dark");
+      ninja.classList.add("dark")
+      localStorage.theme = "dark";
+    }
+  });
+</script>

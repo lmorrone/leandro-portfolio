@@ -11,7 +11,7 @@ const otherLanguage = getInvertedLanguage(currentLocale);
 <div class="group flex flex-col gap-1">
   <button
     id="lang1"
-    class="inline-flex size-8 cursor-pointer items-center justify-center rounded-full border border-gray-200 transition-all hover:bg-gray-100"
+    class="inline-flex size-8 cursor-pointer items-center justify-center rounded-full border border-gray-200 transition-all hover:bg-gray-100 dark:border-gray-700 dark:hover:bg-gray-800"
   >
     {
       currentLocale !== "en" ? (
@@ -25,7 +25,7 @@ const otherLanguage = getInvertedLanguage(currentLocale);
     id="lang2"
     href={`/${otherLanguage}`}
     title={i18n.SWITCH_LANG}
-    class="animate-flip-down animate-duration-200 animate-ease-in-out hidden size-8 cursor-pointer items-center justify-center rounded-full border border-gray-200 transition-all hover:bg-gray-100 group-hover:inline-flex"
+    class="animate-flip-down animate-duration-200 animate-ease-in-out hidden size-8 cursor-pointer items-center justify-center rounded-full border border-gray-200 transition-all hover:bg-gray-100 group-hover:inline-flex dark:border-gray-700 dark:hover:bg-gray-800"
   >
     {
       currentLocale !== "en" ? (
@@ -41,12 +41,13 @@ const otherLanguage = getInvertedLanguage(currentLocale);
   const lang1 = document.getElementById("lang1");
   const lang2 = document.getElementById("lang2");
 
-  lang1.addEventListener("focusin", (event) => {
-    lang2.classList.remove("hidden");
-    lang2.classList.add("inline-flex");
+  lang1?.addEventListener("focusin", () => {
+    lang2?.classList.remove("hidden");
+    lang2?.classList.add("inline-flex");
   });
-  lang2.addEventListener("focusout", (event) => {
-    lang2.classList.add("hidden");
-    lang2.classList.remove("inline-flex");
+  
+  lang2?.addEventListener("focusout", () => {
+    lang2?.classList.add("hidden");
+    lang2?.classList.remove("inline-flex");
   });
 </script>
