@@ -12,18 +12,18 @@ import SwitchThemeIcon from "@/icons/SwitchThemeIcon.astro";
   const button = document.querySelector("button");
   const ninja = document.querySelector("ninja-keys");
 
-  button.addEventListener("click", () => {
+  button?.addEventListener("click", () => {
     if (
       localStorage.theme === "dark" ||
       (!("theme" in localStorage) &&
         window.matchMedia("(prefers-color-scheme: dark)").matches)
     ) {
       document.documentElement.classList.remove("dark");
-      ninja.classList.remove("dark");
+      ninja?.classList.remove("dark");
       localStorage.theme = "light";
     } else {
       document.documentElement.classList.add("dark");
-      ninja.classList.add("dark")
+      ninja?.classList.add("dark")
       localStorage.theme = "dark";
     }
   });
