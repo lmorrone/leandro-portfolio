@@ -21,5 +21,12 @@
   "KEY_PRESS": "Presione",
   "KEY_TO_OPEN": "para abrir la paleta de comandos",
   "KEY_SEARCH_COMMAND": "Buscar comando...",
-  "SWITCH_LANG": "Switch language to English"
+  "SWITCH_LANG": "Switch language to English",
+  "SWITCH_COLOR": "Cambiar tema",
+  "KEY_COLOR": "Cambiar tema...",
+  "KEY_COLOR_DARK": "Cambiar a modo oscuro",
+  "KEY_COLOR_LIGHT": "Cambiar a modo claro",
+  "KEY_LANG": "Cambiar idioma...",
+  "KEY_LANG_SPANISH": "Español",
+  "KEY_LANG_ENGLISH": "Inglés"
 }

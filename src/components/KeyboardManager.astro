@@ -27,23 +27,6 @@ const profilesInfo = profiles.map(({ url, network }) => {
     url: url,
   };
 });
-
-const printInfo = {
-  id: "print",
-  title: i18n.KEY_ACTION_PRINT,
-  hotkey: "ctrl+P",
-  icon: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="margin-right: 8px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0 1 10.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0 .229 2.523a1.125 1.125 0 0 1-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0 0 21 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 0 0-1.913-.247M6.34 18H5.25A2.25 2.25 0 0 1 3 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 0 1 1.913-.247m10.5 0a48.536 48.536 0 0 0-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5Zm-3 0h.008v.008H15V10.5Z" /></svg>',
-  section: i18n.KEY_SECTION_ACTIONS,
-};
-
-const emailInfo = {
-  id: "email",
-  title: i18n.KEY_ACTION_CONTACT_EMAIL,
-  hotkey: "ctrl+E",
-  icon: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="margin-right: 8px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>',
-  section: i18n.KEY_SECTION_SOCIAL,
-  email: email,
-};
 ---
 
 <footer
@@ -66,8 +49,8 @@ const emailInfo = {
 <ninja-keys
   class="print:hidden"
   data-profiles={JSON.stringify(profilesInfo)}
-  data-print={JSON.stringify(printInfo)}
-  data-email={JSON.stringify(emailInfo)}
+  data-i18n={JSON.stringify(i18n)}
+  data-email={email}
   placeholder={i18n.KEY_SEARCH_COMMAND}
   hideBreadcrumbs></ninja-keys>
 
@@ -90,11 +73,10 @@ const emailInfo = {
     const profilesInfo = ninja.getAttribute("data-profiles");
     const parsedProfilesInfo = JSON.parse(profilesInfo ?? "[]");
 
-    const printInfo = ninja.getAttribute("data-print");
-    const parsedPrintInfo = JSON.parse(printInfo ?? "[]");
+    const i18n = ninja.getAttribute("data-i18n");
+    const parsedI18n = JSON.parse(i18n ?? "{}");
 
-    const emailInfo = ninja.getAttribute("data-email");
-    const parsedEmailInfo = JSON.parse(emailInfo ?? "[]");
+    const email = ninja.getAttribute("data-email");
 
     const dataProfiles = parsedProfilesInfo.map((profile: any) => {
       return {
@@ -105,21 +87,87 @@ const emailInfo = {
       };
     });
 
-    const dataPrint = {
-      ...parsedPrintInfo,
-      handler: () => {
-        window.print();
+    const data = [
+      {
+        id: "email",
+        title: parsedI18n.KEY_ACTION_CONTACT_EMAIL,
+        hotkey: "ctrl+E",
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="margin-right: 8px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>',
+        section: parsedI18n.KEY_SECTION_SOCIAL,
+        handler: () => {
+          window.location.href = "mailto:" + email;
+        },
       },
-    };
-
-    const dataEmail = {
-      ...parsedEmailInfo,
-      handler: () => {
-        window.location.href = "mailto:" + parsedEmailInfo.email;
+      ...dataProfiles,
+      {
+        id: "print",
+        title: parsedI18n.KEY_ACTION_PRINT,
+        hotkey: "ctrl+P",
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="margin-right: 8px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0 1 10.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0 .229 2.523a1.125 1.125 0 0 1-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0 0 21 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 0 0-1.913-.247M6.34 18H5.25A2.25 2.25 0 0 1 3 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 0 1 1.913-.247m10.5 0a48.536 48.536 0 0 0-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5Zm-3 0h.008v.008H15V10.5Z" /></svg>',
+        section: parsedI18n.KEY_SECTION_ACTIONS,
+        handler: () => {
+          window.print();
+        },
       },
-    };
+      {
+        id: "theme",
+        title: parsedI18n.KEY_COLOR,
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="margin-right: 8px" viewBox="0 -960 960 960" width="24" ><path fill="currentColor" d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm40-83q119-15 199.5-104.5T800-480q0-123-80.5-212.5T520-797v634Z"></path></svg>',
+        children: ["light-theme", "dark-theme"],
+        section: parsedI18n.KEY_SECTION_ACTIONS,
+        handler: () => {
+          ninja.open({ parent: "theme" });
+          return { keepOpen: true };
+        },
+      },
+      {
+        id: "light-theme",
+        title: parsedI18n.KEY_COLOR_LIGHT,
+        parent: "theme",
+        handler: () => {
+          document.documentElement.classList.remove("dark");
+          localStorage.theme = "light";
+        },
+      },
+      {
+        id: "dark-theme",
+        title: parsedI18n.KEY_COLOR_DARK,
+        parent: "theme",
+        handler: () => {
+          document.documentElement.classList.add("dark");
+          localStorage.theme = "dark";
+        },
+      },
+      {
+        id: "language",
+        title: parsedI18n.KEY_LANG,
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="margin-right: 8px" viewBox="0 -960 960 960" width="24"><path d="m476-80 182-480h84L924-80h-84l-43-122H603L560-80h-84ZM160-200l-56-56 202-202q-35-35-63.5-80T190-640h84q20 39 40 68t48 58q33-33 68.5-92.5T484-720H40v-80h280v-80h80v80h280v80H564q-21 72-63 148t-83 116l96 98-30 82-122-125-202 201Zm468-72h144l-72-204-72 204Z"/></svg>',
+        children: ["lang-spanish", "lang-english"],
+        section: parsedI18n.KEY_SECTION_ACTIONS,
+        handler: () => {
+          ninja.open({ parent: "language" });
+          return { keepOpen: true };
+        },
+      },
+      {
+        id: "lang-spanish",
+        title: parsedI18n.KEY_LANG_SPANISH,
+        parent: "language",
+        handler: () => {
+          window.location.href = "/es";
+        },
+      },
+      {
+        id: "lang-english",
+        title: parsedI18n.KEY_LANG_ENGLISH,
+        parent: "language",
+        handler: () => {
+          window.location.href = "/en";
+        },
+      },
+    ];
 
-    ninja.data = [dataPrint, dataEmail, ...dataProfiles];
+    ninja.data = data;
   }
 </script>
 

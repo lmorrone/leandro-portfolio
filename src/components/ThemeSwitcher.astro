@@ -1,8 +1,13 @@
 ---
 import SwitchThemeIcon from "@/icons/SwitchThemeIcon.astro";
+import { getI18n } from "@/i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18n(currentLocale);
 ---
 
 <button
+  title={i18n.SWITCH_COLOR}
   class="inline-flex size-8 cursor-pointer items-center justify-center rounded-full border border-gray-200 transition-all hover:bg-gray-100 hover:text-gray-950 dark:border-gray-700 dark:hover:bg-gray-800 dark:hover:text-gray-100"
 >
   <SwitchThemeIcon className="size-5" />
@@ -23,7 +28,7 @@ import SwitchThemeIcon from "@/icons/SwitchThemeIcon.astro";
       localStorage.theme = "light";
     } else {
       document.documentElement.classList.add("dark");
-      ninja?.classList.add("dark")
+      ninja?.classList.add("dark");
       localStorage.theme = "dark";
     }
   });
