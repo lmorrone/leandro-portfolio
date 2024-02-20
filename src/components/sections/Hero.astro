@@ -57,7 +57,7 @@ const linkedinUser = profiles.find((x) => x.network == "Linkedin")?.username;
         {
           phone && (
             <SocialButton
-              href={`tel:${email}`}
+              href={`tel:${phone}`}
               title={`${i18n.CALL_TO} ${name} ${i18n.AT_NUMBER} ${phone}`}
             >
               <PhoneIcon />
